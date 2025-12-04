@@ -21,7 +21,8 @@ def on_message(client, userdata, msg):
     print(msg.topic + " " + str(msg.qos) + " " + str(msg.payload))
 
 def generate():
-    rtsp_url = "rtsp://admin:Admin.1234@192.168.1.64:554/Streaming/Channels/102"
+    rtsp_url = "rtsp://rtspstream:ZqniBPd7ILatymFgJcK9W@zephyr.rtsp.stream/movie"
+    '''rtsp://admin:Admin.1234@192.168.1.64:554/Streaming/Channels/102'''
     cap = None
 
     def open_capture():
